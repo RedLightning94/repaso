@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let minutos=parseInt(prompt("escribe numero de minutos"));
+        let dias ;
+        let años = ((minutos/60)/24)/365.25;
+        años =parseInt(años);
+        let resto= minutos-(((años*365.25)*24)*60)
+        dias= parseInt((resto/60)/24);
+
+        console.log(minutos+" minutos, son "+años+" años y "+dias+" dias");
+    </script>
+</body>
+</html>

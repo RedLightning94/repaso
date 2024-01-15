@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let edad=parseInt(prompt("introduce la edad:"))
+        let carnet;
+        let nombre;
+        let apellido;
+        let ciudad;
+        let dias;
+        let coc;
+        let resto;
+        let precio;
+
+
+        if(edad<18){
+            console.log("eres menor de edad, no se puede alquilar");
+
+        }else{
+            carnet=prompt("tienes carnet de conducir?")
+            if(carnet=="si"){
+                nombre=prompt("introduce tu nombre");
+                apellido=prompt("introduce apellido");
+                ciudad= prompt("introduce la  ciudad");
+                dias=parseInt(prompt("introduce la cantidad de dias de alquiler"))
+
+                coc=dias/7;
+                coc=parseInt(coc);
+                resto=dias-(coc*7);
+                precio=(resto*25)+(coc*150);
+
+                console.log("Nombre: "+nombre);
+                console.log("Apellido: "+apellido);
+                console.log("edad: "+edad);
+                console.log("ciudad: "+ciudad);
+                console.log("precio a pagar: "+precio+" por un total de "+coc+" semanas y "+resto+" dias");
+
+
+
+            }else{
+                console.log("no tienes carnet, no podemos alquilarte");
+
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

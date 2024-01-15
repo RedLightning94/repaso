@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = prompt("introduce un numero de 3 cifras:" );
+        let arrai=[];
+        let impar=0;
+        let par=0;
+
+        for (let index = 0; index < 3; index++) {
+            arrai[index]=parseInt(num.substring(index, index+1));
+            if(arrai[index]%2==0){
+                par=par+1;
+            }else{
+                impar=impar+1
+            }
+            
+        }
+
+        if(impar>2){
+            console.log("son todos impares");
+        }else if(par>2){
+            console.log("son todos pares");
+        }else {
+            console.log("mezcla de pares e impares");
+        }
+    </script>
+</body>
+</html>
